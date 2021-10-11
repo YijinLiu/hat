@@ -1,6 +1,7 @@
 #!/bin/bash
 
-set -e 
+set -e
 
-sudo apt install -y --no-install-recommends build-essential influxdb python3-dev python3-pip
-sudo pip3 install --upgrade Adafruit_DHT RPi.GPIO influxdb
+sudo apt install -y --no-install-recommends build-essential influxdb libgpiod2 python3-dev \
+    python3-pip
+sudo pip3 install --upgrade RPi.GPIO adafruit-circuitpython-dht gTTS influxdb paramiko
